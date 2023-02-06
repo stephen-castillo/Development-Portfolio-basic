@@ -10,6 +10,7 @@
         <title>Stylized Website</title>
         <meta name="description" content="A practice website for CSS styling">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
     <body>
@@ -17,8 +18,76 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>The website is working</p>
+        <header>
+            <nav>
+                <h1>Stephen Castillo</h1>
+                <ul>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactinfo">Contact Info</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <aside>
+            <section class="aboutme">
+                <h2>About Me:</h2>
+            </section>
+
+            <section class="projects">
+                <h2>Projects:</h2>
+            </section>
+
+            <section class="contactinfo">
+                <h2>Contact Info:</h2>
+            </section>
+        </aside>
+
+        <main>
+            <div class="hero"></div>
+            <section class="aboutme" id="aboutme">
+                About Me
+            </section>
+
+            <div class="projects" id="projects">
+                <section class="project1" id="project1">
+                    project 1
+                </section>
+                <section class="project2" id="project2">
+                    project 2
+                </section>
+                <section class="project3" id="project3">
+                    project 3
+                </section>
+                <section class="project4" id="project4">
+                    project 4
+                </section>
+                <section class="project5" id="project5">
+                    project 5
+                </section>
+            </div>
+
+        </main>
+
+        <footer>
+            <h3>Contact Information</h3>
+            <section class="contactinfo" id="contactinfo">
+                <ul>
+                    <li>
+                        Phone Number: 
+                    </li>
+                    <li>
+                        <a href="mailto:stephencastillo117@gmail.com">Email: stephencastillo117@gmail.com</a>
+                    </li>
+                    <li>
+                        GitHub
+                    </li>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
         
     </body>
 </html>
