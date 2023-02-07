@@ -2,6 +2,11 @@
     background-color: #13293d;
     color: #8FD8D8;
 }
+
+body {
+    font-size: 1em;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -9,7 +14,6 @@ header {
     padding: 1%;
     background-color: #13293d;
     color: #3A86FF;
-    
 }
   
 nav h1 {
@@ -34,33 +38,30 @@ nav a:hover {
     color: goldenrod;
 }
 
-body {
-    font-size: 1em;
-    display: block;
-}
+
 
 .hero{
     width: 100%;
     content: url("../images/AdobeStock_426122694.jpeg");
 }
 
-aside{
+.container{
     display: flex;
-    justify-self: left;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+aside{
     width: 20%;
-    height: 100vh;
     background-color: greenyellow;
-    flex-direction: column;
+    
 }
 
 main {
-    display: flex;
-    height: 100vh;
     width: 80%;
-    flex: auto;
-    flex-wrap: wrap;
     background-color: red;
-    flex-direction: column;
+    
 }
 
 footer{
