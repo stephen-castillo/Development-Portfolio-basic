@@ -1,14 +1,18 @@
+/* Affects all elements */
 *{
     background-color: #13293d;
     color: #8FD8D8;
-}
-
-body {
     font-size: 1em;
+    
 }
 
+body{
+    margin: 0% 5%; 
+}
+
+/* All things related to the header and the nav */
 header {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
@@ -39,11 +43,13 @@ nav a:hover {
 }
 
 
-
+/* Hero is technically in the body but is not what I would consider an active element */
 .hero{
     width: 100%;
     content: url("../images/AdobeStock_426122694.jpeg");
 }
+
+/* Everything in the actual content body */
 
 .container{
     display: flex;
@@ -64,8 +70,66 @@ main {
     
 }
 
-footer{
+div.projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+section.project{
+    margin: 5px;
+    width: 45%;
+    background-color: green;
+
+}
+
+.projects #project1{
+    background-color: chocolate;
+    width: 100%;
+    text-align: center;
+
+}
+
+img{
+    height: 180px;
+    width: 360px;
+}
+
+#project1 img{
+    height: 360px;
+    width: 720px;
+}
+
+.contactinfo{
+    width: 100%;
+    justify-content: center;
+}
+
+.contactinfo ul{
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contactinfo ul li{
     display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+
+/* All things footer */
+footer{
+    display: inline-block;
+}
+
+.center{
+    text-align: center;
 }
 
 footer ul{
