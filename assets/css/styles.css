@@ -3,6 +3,9 @@
     background-color: #13293d;
     color: #8FD8D8;
 }
+p{
+    text-indent: 1em;
+}
 
 /* All things related to the header and the nav */
 header {
@@ -51,7 +54,7 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 aside{
@@ -84,7 +87,13 @@ div.projects{
 section.project{
     margin: 5px;
     width: 45%;
+    text-align: center;
     /* background-color: green; */
+}
+
+.project:hover{
+    border: 2px solid goldenrod;
+    box-shadow: 5px 5px #13293d;
 }
 
 .projects #project1{
@@ -108,6 +117,7 @@ section.project{
 }
 
 .contactinfo{
+    margin: 2%;
     width: 100%;
     justify-content: center;
     order: 5;
@@ -128,15 +138,23 @@ section.project{
     list-style-type: none;
 }
 
+#contactinfo a{
+    text-decoration: none;
+}
+#contactinfo a:hover{
+    border: 2px solid goldenrod;
+}
+
 
 /* All things footer */
 footer{
-    display: inline-block;
+    margin: 2%;
+    display: inline;
     order: 6;
 }
 
-.center{
-    text-align: center;
+footer section{
+    margin: 2%;
 }
 
 footer ul{
@@ -145,8 +163,13 @@ footer ul{
 
 .citations:hover ul{
     display: block;
+    border: 2px solid goldenrod;
+    
 }
 
+#copyright{
+    text-align: center;
+}
 /* 
 Possible colors:
 
