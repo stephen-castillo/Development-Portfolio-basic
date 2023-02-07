@@ -2,12 +2,6 @@
 *{
     background-color: #13293d;
     color: #8FD8D8;
-    font-size: 1em;
-    
-}
-
-body{
-    margin: 0% 5%; 
 }
 
 /* All things related to the header and the nav */
@@ -24,12 +18,14 @@ nav h1 {
     display: flex;
     font-size: 200%;
     margin-left: 1em;
+    order: 1;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    order: 2;
 }
   
 nav a {
@@ -59,15 +55,23 @@ nav a:hover {
 }
 
 aside{
-    width: 20%;
-    background-color: greenyellow;
-    
+    margin: 2%;
+    width: 36%;
+/*     background-color: greenyellow;
+ */    order: 3;
+}
+
+aside img{
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
 }
 
 main {
-    width: 80%;
-    background-color: red;
-    
+    margin: 2%;
+    width: 56%;
+    /* background-color: red; */
+    order: 4;
 }
 
 div.projects{
@@ -80,30 +84,33 @@ div.projects{
 section.project{
     margin: 5px;
     width: 45%;
-    background-color: green;
-
+    /* background-color: green; */
 }
 
 .projects #project1{
-    background-color: chocolate;
+    /* background-color: chocolate; */
     width: 100%;
     text-align: center;
-
 }
 
-img{
-    height: 180px;
-    width: 360px;
+.projects img{
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
 }
 
 #project1 img{
-    height: 360px;
-    width: 720px;
+    /* height: 360px;
+    width: 720px; */
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
 }
 
 .contactinfo{
     width: 100%;
     justify-content: center;
+    order: 5;
 }
 
 .contactinfo ul{
@@ -113,7 +120,6 @@ img{
     width: 100%;
     margin: 0;
     padding: 0;
-    
 }
 
 .contactinfo ul li{
@@ -126,6 +132,7 @@ img{
 /* All things footer */
 footer{
     display: inline-block;
+    order: 6;
 }
 
 .center{
